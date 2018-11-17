@@ -1,0 +1,152 @@
+body {
+    margin: auto;
+    background-color: rgb(144,200,191);
+    min-width: 960px;
+}
+#player_a_score {
+    font-family: 'Chelsea Market';
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+}
+#player_b_score {
+    font-family: 'Chelsea Market';    
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+}
+.circle {
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: rgb(126, 126, 126);
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;    
+}
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    }
+#logo:after {
+    content:"RPS Multiplayer";
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+#logo:after {
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+}
+#logocontainer {
+    margin:auto;
+    margin-bottom: 40px;
+}
+#scoretag {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 70;
+    margin-bottom: 0px;
+    text-shadow: #EDEDED 2px 1px 0;
+}
+#resetscore {
+    cursor: pointer;
+}
+.centeralign {
+    margin: auto;
+    text-align: center;
+}
+#console {
+    font-family: 'Chelsea Market';
+    font-size: 4em;
+    padding:0px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+small {
+    color: #555;
+}
+
+img {
+    margin-top: 90px;
+    width: 40%;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-timing-function: ease;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-50px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-3px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+@keyframes example {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-50px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-3px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   { transform: scale(1,1)}
+    10%  { transform: scale(1.1,1)}
+    30%  { transform: scale(.9,1)}
+    50%  { transform: scale(1,1)}
+    57%  { transform: scale(1,1)}
+    64%  { transform: scale(1,1)}
+    100% { transform: scale(1,1)}
+}
+
+@keyframes example2 {
+    0%   { transform: scale(1,1)}
+    10%  { transform: scale(1.1,1)}
+    30%  { transform: scale(.9,1)}
+    50%  { transform: scale(1,1)}
+    57%  { transform: scale(1,1)}
+    64%  { transform: scale(1,1)}
+    100% { transform: scale(1,1)}
+}
